@@ -98,13 +98,12 @@ st.markdown("""
 # 1. Configuration and Model Initialization
 # ------------------------
 load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = os.getenv("GEMINI_API_KEY") 
 
 if api_key:
     genai.configure(api_key=api_key)
-else:
-    st.error("❌ ERROR: GEMINI_API_KEY not found. Please check your .env file.")
-    st.stop()
+# ...
+
     
 GEMINI_MODEL = 'gemini-2.5-flash'
 
