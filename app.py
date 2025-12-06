@@ -108,9 +108,6 @@ else:
     
 GEMINI_MODEL = 'gemini-2.5-flash'
 
-# --- FFmpeg Path for Whisper ---
-os.environ["PATH"] += os.pathsep + r"C:\Users\User\Downloads\ffmpeg-master-latest-win64-gpl-shared\ffmpeg-master-latest-win64-gpl-shared\bin"
-
 # Initialize Whisper ASR Pipeline (Caching resource)
 @st.cache_resource
 def load_asr_pipeline():
